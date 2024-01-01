@@ -5,4 +5,6 @@ This is my learning record for the [Programming Languages](https://www.coursera.
 
 ## Part-A
 
-- [x] [Homework 1](./Part-A/hw01.sml) `99/100`
+| Problem                         | Score     | Note                  |
+| ------------------------------- | --------- | --------------------- |
+| [Homework 1](./Part-A/hw01.sml) | `100/100` | No challenge problems |
