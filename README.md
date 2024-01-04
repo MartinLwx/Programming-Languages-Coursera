@@ -7,6 +7,7 @@ This is my learning record for the [Programming Languages](https://www.coursera.
 
 | Problem                         | Score     | Note                  |
 | ------------------------------- | --------- | --------------------- |
+| [Homework 0](./Part-A/hw00.sml) | `100/100` | Trivial               |
 | [Homework 1](./Part-A/hw01.sml) | `100/100` | No challenge problems |
 | [Homework 2](./Part-A/hw02.sml) | `100/100` | No challenge problems |
 | [Homework 3](./Part-A/hw03.sml) | `98/100` | No challenge problems |
