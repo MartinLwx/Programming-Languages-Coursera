@@ -1,4 +1,4 @@
-(* Coursera Programming Languages, Homework 3, Provided Code *)
+(* Coursera Programming Languag(print )es, Homework 3, Provided Code *)
 
 exception NoAnswer
 
@@ -162,8 +162,10 @@ fun match (v, p) =
        (_, Wildcard)                                 => SOME []
      | (_, Variable s)                               => SOME [(s, v)]
      | (Unit, UnitP)                                 => SOME []
-     | (Const(x), ConstP(y))                         => if x = y then SOME [] else NONE
-     | (Tuple vs, TupleP ps)                         => all_answers match (ListPair.zip(vs, ps))
+     | (Const x, ConstP y)                           => if x = y then SOME [] else NONE
+     | (Tuple vs, TupleP ps)                         => if List.length vs <> List.length ps
+                                                        then NONE
+                                                        else all_answers match (ListPair.zip(vs, ps))
      | (Constructor(s1, v), ConstructorP(s2, p))     => if s1 = s2 then match(v, p) else NONE
      | (_, _)                                        => NONE
 
@@ -173,4 +175,4 @@ fun match (v, p) =
 SOME lst where lst is the list of bindings for the first pattern in the list
 that matches. Use first_answer and a handle-expression. *)
 fun first_match value pattern_list =
-  (first_answer (fn p => SOME(match(value, p))) pattern_list) handle NoAnswer => NONE
+  SOME (first_answer (fn p => match(value, p)) pattern_list) handle NoAnswer => NONE
