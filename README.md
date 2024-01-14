@@ -17,3 +17,4 @@ This is my learning record for the [Programming Languages](https://www.coursera.
 | Problem                         | Score     | Note                  |
 | ------------------------------- | --------- | --------------------- |
 | [Homework 4](./Part-B/hw04.rkt) | `100/100` | All problems solved   |
+| [Homework 5](./Part-B/hw05.rkt) | `99/100` | No challenge problems |
