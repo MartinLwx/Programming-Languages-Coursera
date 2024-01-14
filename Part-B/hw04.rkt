@@ -1,4 +1,3 @@
-
 #lang racket
 
 (provide (all-defined-out)) ;; so we can put tests in a second file
@@ -60,10 +59,10 @@
 ;; The elements of the stream alternate between the strings "dan.jpg" and "dog.jpg"
 (define dan-then-dog
   (letrec ([f (lambda (s)
-                (if (eq? s "dan.jpg")
+                (if (equal? s "dog.jpg")
                     (cons "dog.jpg" (lambda () (f "dan.jpg")))
                     (cons "dan.jpg" (lambda () (f "dog.jpg")))))])
-    (lambda () (f "dog.jpg"))))
+    (lambda () (f "dan.jpg"))))
 
 
 ;; Takes a stream s and returns another stream.
@@ -94,13 +93,13 @@
 ;; 2. It allows vector elements not to be pairs in which case it skips them
 ;; 3. It always takes two arguments
 (define (vector-assoc v vec)
-  (letrec ([vec-length (vector-length vec)]
+  (letrec ([vec_length (vector-length vec)]
            [f (lambda (pos)
-                (if (>= pos vec-length)
+                (if (>= pos vec_length)
                     #f
                     (let ([element (vector-ref vec pos)])
                       (if (and (pair? element)
-                               (= (car element) v))
+                               (equal? (car element) v))
                           element
                           (f (+ pos 1))))))])
     (f 0)))

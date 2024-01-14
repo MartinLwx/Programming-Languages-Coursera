@@ -16,4 +16,4 @@ This is my learning record for the [Programming Languages](https://www.coursera.
 
 | Problem                         | Score     | Note                  |
 | ------------------------------- | --------- | --------------------- |
-| [Homework 4](./Part-B/hw04.rkt) | `92/100`  | |
+| [Homework 4](./Part-B/hw04.rkt) | `100/100` | All problems solved   |
