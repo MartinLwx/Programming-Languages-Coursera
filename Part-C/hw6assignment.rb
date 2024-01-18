@@ -51,7 +51,7 @@ class MyBoard < Board
   end
 
   def cheat
-    if @score >= 100
+    if @score >= 100 and @cheat_cnt < 1
       @score -= 100
       @cheat_cnt += 1
     end

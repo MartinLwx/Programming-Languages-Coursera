@@ -23,4 +23,4 @@ This is my learning record for the [Programming Languages](https://www.coursera.
 
 | Problem                                 | Score     | Note                  |
 | --------------------------------------- | --------- | --------------------- |
-| [Homework 6](./Part-C/hw6assignment.rb) | `96/100` | |
+| [Homework 6](./Part-C/hw6assignment.rb) | `100/100` | All problems solved   |
