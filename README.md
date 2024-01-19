@@ -21,7 +21,7 @@ This is my learning record for the [Programming Languages](https://www.coursera.
 
 ## Part-C
 
-| Problem                                 | Score     | Note                  |
-| --------------------------------------- | --------- | --------------------- |
-| [Homework 6](./Part-C/hw6assignment.rb) | `100/100` | All problems solved   |
-| Homework 7 - [SML](./Part-C/hw7.sml), [Ruby](./Part-C/hw7.rb) | `96/100` | |
+| Problem                                                       | Score     | Note                  |
+| ------------------------------------------------------------- | --------- | --------------------- |
+| [Homework 6](./Part-C/hw6assignment.rb)                       | `100/100` | All problems solved   |
+| Homework 7 - [SML](./Part-C/hw7.sml), [Ruby](./Part-C/hw7.rb) | `100/100` | All problems solved   |
